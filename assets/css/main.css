@@ -3314,3 +3314,48 @@ input, select, textarea {
 			}
 
 	}
+
+/* Responsive images: centered, proportional, and mobile-friendly.
+   Desktop layout is left unchanged; these rules apply only on phones/tablets. */
+@media screen and (max-width: 736px) {
+
+	/* Standard content images */
+	.image:not(.main):not(.avatar) {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	.image:not(.main):not(.avatar) img {
+		display: block;
+		max-width: 100%;
+		width: auto;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		object-fit: contain;
+		object-position: center;
+	}
+
+	/* Main banner: no fixed height on mobile, no deformation, centered image */
+	.image.main {
+		height: auto;
+		overflow: hidden;
+	}
+
+	.image.main[data-position] img,
+	.image.main img {
+		position: relative;
+		top: auto;
+		left: auto;
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		object-fit: contain;
+		object-position: center;
+	}
+}
