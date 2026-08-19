@@ -3314,8 +3314,7 @@ input, select, textarea {
 			}
 
 	}
-
-/* Responsive images: centered, proportional, and mobile-friendly.
+	/* Responsive images: centered, proportional, and mobile-friendly.
    Desktop layout is left unchanged; these rules apply only on phones/tablets. */
 @media screen and (max-width: 736px) {
 
